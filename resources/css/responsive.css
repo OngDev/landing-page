@@ -105,12 +105,32 @@
 
 /* Blog */
 @media screen and (max-width: 576px) {
+  #blog-card {
+    position: relative;
+    height: 820px;
+    z-index: 1;
+  }
+
   #blog-card .card {
+    position: absolute;
     width: 60%;
   }
 
-  #blog-card .none {
-    display: none;
+  #blog-card .post1 {
+    top: 10px;
+    left: -10px;
+    z-index: 3;
+  }
+
+  #blog-card .post2 {
+    top: 210px;
+    z-index: 2;
+  }
+
+  #blog-card .post3 {
+    top: 410px;
+    right: -10px;
+    z-index: 1;
   }
 
   #blog #blog-direction {

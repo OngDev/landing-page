@@ -16,5 +16,3 @@ stickyHeader = () => {
     header.classList.remove('sticky-header');
   }
 };
-
-/* Blog */
