@@ -16,3 +16,13 @@ stickyHeader = () => {
     header.classList.remove('sticky-header');
   }
 };
+
+/* Blog */
+var card = document.getElementById('blog-card').getElementsByClassName('card');
+for (var i = 0; i < card.length; i++) {
+  if (i == 0) {
+    card[i].classList.add('card-active');
+  } else if (i > 0) {
+    card[i].classList.add('card-unactive');
+  }
+}

@@ -107,30 +107,46 @@
 @media screen and (max-width: 576px) {
   #blog-card {
     position: relative;
-    height: 820px;
-    z-index: 1;
+  }
+
+  #blog-card .card-active {
+    display: block;
+  }
+
+  #blog-card .card-unactive {
+    display: none;
   }
 
   #blog-card .card {
-    position: absolute;
     width: 60%;
   }
 
-  #blog-card .post1 {
-    top: 10px;
-    left: -10px;
-    z-index: 3;
+  #blog-card #post-back {
+    display: block;
+    background-color: #868f9b;
+    color: black;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
   }
 
-  #blog-card .post2 {
-    top: 210px;
-    z-index: 2;
-  }
-
-  #blog-card .post3 {
-    top: 410px;
-    right: -10px;
-    z-index: 1;
+  #blog-card #post-forward {
+    display: block;
+    background-color: #868f9b;
+    color: black;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
   }
 
   #blog #blog-direction {

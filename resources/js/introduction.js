@@ -29,7 +29,7 @@ for (var i = 0; i < imageshow.length; i++) {
 
 var sliderdot = document.getElementsByClassName('dot');
 var imageindex = 0;
-function backImage() {
+backImage = () => {
   imageshow[imageindex].style.display = 'none';
   sliderdot[imageindex].classList.remove('dot-active');
   if (imageindex == 0) {
@@ -38,9 +38,9 @@ function backImage() {
   imageshow[imageindex - 1].style.display = 'block';
   sliderdot[imageindex - 1].classList.add('dot-active');
   imageindex--;
-}
+};
 
-function forwardImage() {
+forwardImage = () => {
   imageshow[imageindex].style.display = 'none';
   sliderdot[imageindex].classList.remove('dot-active');
   imageindex++;
@@ -49,4 +49,4 @@ function forwardImage() {
   }
   imageshow[imageindex].style.display = 'block';
   sliderdot[imageindex].classList.add('dot-active');
-}
+};

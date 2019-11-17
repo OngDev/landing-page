@@ -258,19 +258,26 @@
 }
 
 #blog #blog-card {
-  /* height: auto; */
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 10px;
   color: #868f9b;
 }
 
-#blog .card {
+#blog-card #post-back {
+  display: none;
+}
+
+#blog-card #post-forward {
+  display: none;
+}
+
+#blog-card .card {
   height: 400px;
 }
 
-#blog .post-title {
+#blog-card .post-title {
   font-size: 20px;
   text-align: justify;
   overflow: hidden;
@@ -279,7 +286,7 @@
   padding: 5px;
 }
 
-#blog .post-content {
+#blog-card .post-content {
   text-align: left;
   display: -webkit-box;
   -webkit-line-clamp: 5;
@@ -288,7 +295,7 @@
   padding: 5px;
 }
 
-#blog .post-view {
+#blog-card .post-view {
   text-align: center;
   padding: 5px;
 }
@@ -309,6 +316,7 @@
   color: #868f9b;
   animation: shake 1s infinite;
 }
+
 /* Github */
 #github {
   background-color: #b22222;
