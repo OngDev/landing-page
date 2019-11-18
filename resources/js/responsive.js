@@ -21,7 +21,7 @@ stickyHeader = () => {
 var card = document.getElementById('blog-card').getElementsByClassName('card');
 window.onresize = window.onload = () => {
   for (var i = 0; i < card.length; i++) {
-    if (this.innerWidth <= 768) {
+    if (this.innerWidth < 576) {
       i == 0 ? card[i].classList.add('card-active') : card[i].classList.remove('card-active');
       i > 0 ? card[i].classList.add('card-unactive') : card[i].classList.remove('card-unactive');
     } else {

@@ -110,7 +110,25 @@
   }
 
   #blog-card .card {
-    width: 40%;
+    width: 30%;
+  }
+
+  #blog #blog-direction {
+    width: 36%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #blog-card .card {
+    width: 60%;
+  }
+
+  #blog-card .card-active {
+    display: block;
+  }
+
+  #blog-card .card-unactive {
+    display: none;
   }
 
   #blog-card #post-back {
@@ -139,16 +157,6 @@
     position: absolute;
     top: 50%;
     right: 0;
-  }
-
-  #blog #blog-direction {
-    width: 36%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  #blog-card .card {
-    width: 60%;
   }
 
   #blog #blog-direction {
