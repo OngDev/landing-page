@@ -104,21 +104,13 @@
 }
 
 /* Blog */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   #blog-card {
     position: relative;
   }
 
-  #blog-card .card-active {
-    display: block;
-  }
-
-  #blog-card .card-unactive {
-    display: none;
-  }
-
   #blog-card .card {
-    width: 60%;
+    width: 40%;
   }
 
   #blog-card #post-back {
@@ -147,6 +139,16 @@
     position: absolute;
     top: 50%;
     right: 0;
+  }
+
+  #blog #blog-direction {
+    width: 36%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #blog-card .card {
+    width: 60%;
   }
 
   #blog #blog-direction {

@@ -273,6 +273,14 @@
   display: none;
 }
 
+#blog-card .card-active {
+  display: block;
+}
+
+#blog-card .card-unactive {
+  display: none;
+}
+
 #blog-card .card {
   height: 400px;
 }
