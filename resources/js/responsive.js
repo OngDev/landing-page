@@ -16,18 +16,3 @@ stickyHeader = () => {
     header.classList.remove('sticky-header');
   }
 };
-
-/* Blog */
-var card = document.getElementById('blog-card').getElementsByClassName('card');
-window.onresize = window.onload = () => {
-  for (var i = 0; i < card.length; i++) {
-    if (this.innerWidth < 576) {
-      i == 0 ? card[i].classList.add('card-active') : card[i].classList.remove('card-active');
-      i > 0 ? card[i].classList.add('card-unactive') : card[i].classList.remove('card-unactive');
-    } else {
-      card[i].removeAttribute('style');
-      card[i].classList.remove('card-active');
-      card[i].classList.remove('card-unactive');
-    }
-  }
-};

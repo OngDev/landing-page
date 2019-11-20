@@ -32,23 +32,3 @@ var image = document.getElementsByClassName('post-image');
 for (var i = 0; i < image.length; i++) {
   image[i].setAttribute('src', dummyBlog.image[i]);
 }
-
-var cardshow = document.getElementById('blog-card').getElementsByClassName('card');
-var cardindex = 0;
-backCard = () => {
-  cardshow[cardindex].style.display = 'none';
-  if (cardindex == 0) {
-    cardindex = cardshow.length;
-  }
-  cardshow[cardindex - 1].style.display = 'block';
-  cardindex--;
-};
-
-forwardCard = () => {
-  cardshow[cardindex].style.display = 'none';
-  cardindex++;
-  if (cardindex == cardshow.length) {
-    cardindex = 0;
-  }
-  cardshow[cardindex].style.display = 'block';
-};

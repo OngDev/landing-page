@@ -104,62 +104,39 @@
 }
 
 /* Blog */
-@media screen and (max-width: 768px) {
-  #blog-card {
-    position: relative;
-  }
-
+@media screen and (min-width: 320px) {
   #blog-card .card {
-    width: 30%;
-  }
-
-  #blog #blog-direction {
-    width: 36%;
+    width: 280px;
+    padding: 5px 10px;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 540px) {
   #blog-card .card {
-    width: 60%;
+    width: 250px;
+    padding: 5px 10px;
   }
 
-  #blog-card .card-active {
-    display: block;
-  }
-
-  #blog-card .card-unactive {
-    display: none;
-  }
-
-  #blog-card #post-back {
-    display: block;
-    background-color: #868f9b;
-    color: black;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 0;
-  }
-
-  #blog-card #post-forward {
-    display: block;
-    background-color: #868f9b;
-    color: black;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    right: 0;
+  #blog-card .post-title {
+    font-size: 18px;
   }
 
   #blog #blog-direction {
-    width: 52%;
+    width: 230px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #blog-card .card {
+    width: 280px;
+    padding: 5px 10px;
+  }
+
+  #blog-card .post-title {
+    font-size: 20px;
+  }
+
+  #blog #blog-direction {
+    width: 260px;
   }
 }
