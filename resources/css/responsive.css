@@ -105,22 +105,11 @@
 
 /* Blog */
 @media screen and (min-width: 320px) {
-  .card-list .card {
-    width: 280px;
-    padding: 5px 10px;
-  }
-}
-
-@media screen and (min-width: 540px) {
-  .card-list .card {
-    width: 250px;
-  }
-
-  .card-list .post-title {
-    font-size: 18px;
+  .card-list .card-container {
+    width: 320px;
   }
 
   #blog #blog-direction {
-    width: 230px;
+    width: 300px;
   }
 }
