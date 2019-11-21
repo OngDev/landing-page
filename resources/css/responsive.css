@@ -114,7 +114,6 @@
 @media screen and (min-width: 540px) {
   #blog-card .card {
     width: 250px;
-    padding: 5px 10px;
   }
 
   #blog-card .post-title {
@@ -123,20 +122,5 @@
 
   #blog #blog-direction {
     width: 230px;
-  }
-}
-
-@media screen and (min-width: 720px) {
-  #blog-card .card {
-    width: 280px;
-    padding: 5px 10px;
-  }
-
-  #blog-card .post-title {
-    font-size: 20px;
-  }
-
-  #blog #blog-direction {
-    width: 260px;
   }
 }
