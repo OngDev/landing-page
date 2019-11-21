@@ -248,15 +248,13 @@
 
 /* Blog */
 #blog {
-  background: url('../images/dummyimage4.jpg') no-repeat fixed;
-  background-size: cover;
   text-align: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-#blog #blog-card {
+#blog .card-list {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -265,11 +263,11 @@
   color: #868f9b;
 }
 
-#blog-card .card {
+.card-list .card {
   height: 400px;
 }
 
-#blog-card .post-title {
+.card-list .post-title {
   font-size: 20px;
   font-weight: 600;
   text-align: justify;
@@ -279,7 +277,7 @@
   padding: 5px;
 }
 
-#blog-card .post-content {
+.card-list .post-content {
   text-align: left;
   display: -webkit-box;
   -webkit-line-clamp: 5;
@@ -288,7 +286,7 @@
   padding: 5px;
 }
 
-#blog-card .post-view {
+.card-list .post-view {
   text-align: center;
   padding: 5px;
 }
