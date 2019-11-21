@@ -271,6 +271,7 @@
 
 #blog-card .post-title {
   font-size: 20px;
+  font-weight: 600;
   text-align: justify;
   overflow: hidden;
   text-overflow: ellipsis;
