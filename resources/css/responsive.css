@@ -19,13 +19,13 @@
     font-size: 25px;
     margin: 30px 35px;
   }
-  
+
   #header .fa-bars {
     color: #000000b0;
   }
 
   #header #header-item {
-    display: none; 
+    display: none;
   }
 
   #header #header-item a {
@@ -65,10 +65,10 @@
 @media screen and (max-width: 576px) {
   .cover-title {
     position: relative;
-    border-right: 2px solid rgba(255,255,255,0.75);
-    animation: typing-responsive 2.5s steps(17) 0.5s 1 normal both, blink-caret .75s infinite;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    animation: typing-responsive 2.5s steps(17) 0.5s 1 normal both, blink-caret 0.75s infinite;
   }
-  
+
   .cover-title h1 {
     font-weight: 300;
     font-size: 2.2em;
@@ -93,16 +93,23 @@
 
 /* Introdution */
 @media screen and (max-width: 576px) {
-#introduction {
+  #introduction {
     justify-content: space-around;
     flex-wrap: wrap;
-  }  
-  
-#intro-left #intro-content {
-    line-height: 25px;
-  }  
+  }
 
-#intro-right #slider-image {
+  #intro-right #slider-image {
     height: 250px;
+  }
+}
+
+/* Blog */
+@media screen and (min-width: 320px) {
+  .card-list .card-container {
+    width: 320px;
+  }
+
+  #blog #blog-direction {
+    width: 300px;
   }
 }

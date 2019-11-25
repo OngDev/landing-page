@@ -1,4 +1,4 @@
-const dummy = {
+const dummyIntroduction = {
   image: [
     'resources/images/dummyimage1.jpg',
     'resources/images/dummyimage2.jpg',
@@ -11,11 +11,11 @@ const dummy = {
 };
 
 var main = document.getElementById('content-main');
-main.innerHTML = dummy.content;
+main.innerHTML = dummyIntroduction.content;
 
 var special = document.getElementsByClassName('content-special');
 for (var i = 0; i < special.length; i++) {
-  var text = document.createTextNode(dummy.special);
+  var text = document.createTextNode(dummyIntroduction.special);
   special[i].appendChild(text);
 }
 
@@ -23,13 +23,13 @@ var imageshow = document.getElementsByClassName('image-show');
 for (var i = 0; i < imageshow.length; i++) {
   imageshow[i].setAttribute(
     'style',
-    `background-image: url(${dummy.image[i]}); background-size: 100% 100%`,
+    `background-image: url(${dummyIntroduction.image[i]}); background-size: 100% 100%`,
   );
 }
 
 var sliderdot = document.getElementsByClassName('dot');
 var imageindex = 0;
-function backImage() {
+backImage = () => {
   imageshow[imageindex].style.display = 'none';
   sliderdot[imageindex].classList.remove('dot-active');
   if (imageindex == 0) {
@@ -38,9 +38,9 @@ function backImage() {
   imageshow[imageindex - 1].style.display = 'block';
   sliderdot[imageindex - 1].classList.add('dot-active');
   imageindex--;
-}
+};
 
-function forwardImage() {
+forwardImage = () => {
   imageshow[imageindex].style.display = 'none';
   sliderdot[imageindex].classList.remove('dot-active');
   imageindex++;
@@ -49,4 +49,4 @@ function forwardImage() {
   }
   imageshow[imageindex].style.display = 'block';
   sliderdot[imageindex].classList.add('dot-active');
-}
+};

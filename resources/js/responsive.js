@@ -1,18 +1,18 @@
+/* Header */
 var header = document.getElementById('header');
 
 headerTogger = () => {
   header.classList.toggle('responsive');
 };
 
-window.onscroll = () => { 
+window.onscroll = () => {
   this.stickyHeader();
 };
 
 stickyHeader = () => {
-  if(window.pageYOffset > 0) {
+  if (window.pageYOffset > 0) {
     header.classList.add('sticky-header');
-  }
-  else {
+  } else {
     header.classList.remove('sticky-header');
   }
 };
