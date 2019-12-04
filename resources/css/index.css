@@ -90,7 +90,7 @@
 }
 
 .overlay {
-  background-color: #00000065;
+  background-color: rgba(0, 0, 0, 0.65); 
   height: 60vh;
   width: 100%;
   position: absolute; /*absolute with the cover*/
@@ -99,38 +99,43 @@
 
 .cover-title {
   position: relative;
-  width: 80%;
-  color: #fff;
+  width: fit-content;
+  color: #ffffff;
   display: flex;
   flex-flow: column;
+  flex-wrap: wrap;
   text-align: center;
-  border-right: 4px solid #ffffffd3;
+  border-right: 2px solid #ffffff;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 3s steps(17) 0.5s 1 normal both, blink-caret 0.75s infinite;
+  animation: blink-caret 0.75s infinite;
   z-index: 1;
 }
 
 .cover-title h1 {
+  position: relative;
   font-weight: 300;
-  font-size: 4em;
+  font-size: 2em;
+  display: flex;
   letter-spacing: 0.1em;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .cover-subtitle {
   position: relative;
-  color: #fff;
-  height: 3em;
-  top: 2vh;
+  color: #ffffff;
+  height: 1.5em;
+  top: 2em;
   overflow: hidden;
   z-index: 1;
 }
 
 .cover-subtitle h3 {
-  font-weight: 200;
-  font-size: 1.5em;
-  letter-spacing: 0em;
-  animation: slide-up 4.5s 1;
+  font-weight: 300;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  animation: slide-up 4s 1;
 }
 
 /* Introduction */

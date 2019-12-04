@@ -1,25 +1,7 @@
 /*Cover*/
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 40rem;
-  }
-}
-
-@keyframes typing-responsive {
-  from {
-    width: 0;
-  }
-  to {
-    width: 22rem;
-  }
-}
-
 @keyframes blink-caret {
   from {
-    border-right-color: #ffffffec;
+    border-right-color: #ffffff;
   }
   to {
     border-right-color: transparent;

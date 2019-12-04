@@ -62,32 +62,31 @@
 }
 
 /*Cover*/
-@media screen and (max-width: 576px) {
-  .cover-title {
-    position: relative;
-    border-right: 2px solid rgba(255, 255, 255, 0.75);
-    animation: typing-responsive 2.5s steps(17) 0.5s 1 normal both, blink-caret 0.75s infinite;
-  }
-
+@media screen and (min-width: 540px) {
   .cover-title h1 {
-    font-weight: 300;
-    font-size: 2.2em;
-    letter-spacing: 0.1em;
+    font-size: 3em;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 720px) {
+  .cover-title {
+    border-right: 4px solid #ffffff;
+  }
+
+  .cover-title h1 {
+    font-size: 4em;
+  }
+
   .cover-subtitle {
-    height: 1.5em;
-    overflow: hidden;
+    height: 3em;
   }
 
   .cover-subtitle h3 {
     height: 1em;
-    font-weight: 300;
-    font-size: 1em;
-    letter-spacing: 0.1em;
-    animation: slide-up 4s 1;
+    font-weight: 200;
+    font-size: 1.5em;
+    letter-spacing: 0em;
+    animation: slide-up 4.5s 1;
   }
 }
 
