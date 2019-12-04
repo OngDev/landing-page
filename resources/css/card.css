@@ -30,6 +30,10 @@
   color: #000;
 }
 
+.navigate {
+  cursor: pointer;
+}
+
 .flip-card {
   width: 20%;
   height: 100%;
