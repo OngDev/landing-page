@@ -5,9 +5,10 @@ var title = document.createElement('H1');
 titleContainer[0].appendChild(title);
 
 function add(i) {
-  if(i>=str.length) return;
+  if(i >= str.length) return;
 	title.innerHTML += str[i];
-  setTimeout(add,200,i+1);
+  setTimeout(add, 200, i+1);
 }
+
 add(0);
 
