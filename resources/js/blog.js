@@ -22,7 +22,9 @@ const dummyBlog = [
   },
 ];
 
-for (var i = 0; i < 3; i++) {
+var listcard = document.getElementById('blog').getElementsByClassName('card-list')[0];
+
+for (var i = 0; i < dummyBlog.length; i++) {
   var icon = document.createElement('I');
   var postview = document.createElement('DIV');
   var postcontent = document.createElement('DIV');
@@ -31,7 +33,6 @@ for (var i = 0; i < 3; i++) {
   var postimage = document.createElement('IMG');
   var card = document.createElement('DIV');
   var cardcontainer = document.createElement('DIV');
-  var listcard = document.getElementsByClassName('card-list');
 
   postview.classList.add('post-view');
   icon.className = 'fas fa-eye';
@@ -56,11 +57,12 @@ for (var i = 0; i < 3; i++) {
   postimage.setAttribute('src', dummyBlog[i].image);
 
   card.classList.add('card');
+  card.classList.add('navigate');
   card.appendChild(postimage);
   card.appendChild(content);
 
   cardcontainer.classList.add('card-container');
   cardcontainer.appendChild(card);
 
-  listcard[0].appendChild(cardcontainer);
+  listcard.appendChild(cardcontainer);
 }
