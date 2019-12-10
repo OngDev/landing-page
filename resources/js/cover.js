@@ -1,12 +1,19 @@
+const dummyCover = 'resources/images/dummyimage3.jpg';
+
 const str = 'ÔNG DEV VUI TÍNH';
 
-var titleContainer = document.getElementsByClassName('cover-title');
-var title = document.createElement('H1');
-titleContainer[0].appendChild(title);
+let coverBackground = document.getElementById('cover'); 
+let titleContainer = document.getElementsByClassName('cover-title');
+let coverTitle = document.createElement('H1');
+titleContainer[0].appendChild(coverTitle);
+
+coverBackground.setAttribute('style',
+`background-image: url(${dummyCover})`,
+);
 
 add = (i) => {
   if(i >= str.length) return;
-	title.innerHTML += str[i];
+	coverTitle.innerHTML += str[i];
   setTimeout(add, 250, i+1);
 }
 
