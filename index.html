@@ -29,20 +29,25 @@
         <a href="#">Portfolio</a>
       </div>
       <div id="log-in" class="items">
-        <a href="#" onclick="showPopup()">Log in</a>
+        <a href="#" onclick="togglePopup()">Log in</a>
       </div>
     </div>
-    <div id="popup" onclick="hidePopup()"></div>
-    <div id="form">
-      <div id="close-form" onclick="hidePopup()"><i class="fas fa-times"></i></div>
-      <div id="type-form">
-        Type of Form will have many row input depend on require
+    <div id="popup" class="d-none" onclick="togglePopup()"></div>
+    <div id="form" class="d-none">
+      <div class="type-form">
+        <div class="form-name">Login</div>
+        <input type="text" placeholder="This is just example" />
+        <input type="password" placeholder="In task Login and Register form make more" />
       </div>
-      <div id="description-form">
-        Description Form
+      <div class="type-form">
+        <div class="form-name">Register</div>
+        <input type="text" placeholder="This is just example" />
+        <input type="password" placeholder="In task Login and Register form make more" />
       </div>
-      <div id="submit-form">
-        Submit Form
+      <div id="redirect-button">
+        <div id="login" onclick="changeForm()">Login</div>
+        <div id="register" onclick="changeForm()">Register</div>
+        <div id="cancel" onclick="togglePopup()">Cancel</div>
       </div>
     </div>
     <div id="cover">
