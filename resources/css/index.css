@@ -82,6 +82,7 @@
 
 /* Popup */
 #popup {
+  background-color: rgba(0, 0, 0, 0.65);
   width: 100%;
   height: 100%;
   position: fixed;
@@ -90,7 +91,7 @@
 
 /* Form */
 #form {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   width: 500px;
   height: auto;
   position: fixed;
@@ -111,20 +112,29 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
 }
 
-#form #close-form:hover {
-  color: rgb(241, 206, 206);
-}
-
 #form .type-form {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
 }
 
 #form .type-form:not(:first-child) {
   display: none;
+}
+
+#form #close-form {
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  color: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+}
+
+#form #close-form:hover {
+  color: rgb(240, 148, 28);
 }
 
 .type-form .form-name {
@@ -143,13 +153,18 @@
 
 #form #redirect-button {
   width: 100%;
-  height: auto;
+  height: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 #redirect-button #login,
-#register,
-#cancel {
-  width: 60%;
+#register {
+  width: 20%;
+  height: 32px;
   background-color: rgb(134, 143, 155);
   border-radius: 5px;
   display: flex;
@@ -157,17 +172,38 @@
   align-items: center;
   margin: 16px auto;
   cursor: pointer;
-  font-size: 24px;
-  height: 40px;
+  font-size: 16px;
   color: rgb(245, 245, 245);
 }
 
 #redirect-button #login:hover,
-#register:hover,
-#cancel:hover {
+#register:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
   background-color: rgb(245, 245, 245);
   color: rgb(134, 143, 155);
+}
+
+#redirect-button #have,
+#need {
+  display: none;
+}
+
+#redirect-button #have,
+#need,
+#forgot {
+  flex-grow: 1;
+  text-align: center;
+  height: 32px;
+  font-size: 15px;
+  color: rgb(100, 100, 236);
+  cursor: pointer;
+  padding: 5px 50px;
+}
+
+#redirect-button #have:hover,
+#need:hover,
+#forgot:hover {
+  color: rgb(240, 148, 28);
 }
 
 .d-none {
