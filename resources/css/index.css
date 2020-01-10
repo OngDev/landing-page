@@ -183,29 +183,6 @@
   color: rgb(134, 143, 155);
 }
 
-#redirect-button #have,
-#need {
-  display: none;
-}
-
-#redirect-button #have,
-#need,
-#forgot {
-  flex-grow: 1;
-  text-align: center;
-  height: 32px;
-  font-size: 15px;
-  color: rgb(100, 100, 236);
-  cursor: pointer;
-  padding: 5px 50px;
-}
-
-#redirect-button #have:hover,
-#need:hover,
-#forgot:hover {
-  color: rgb(240, 148, 28);
-}
-
 .d-none {
   display: none;
 }
