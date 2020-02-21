@@ -249,7 +249,9 @@ form #close-form:hover {
 .type-form input {
   width: 80%;
   height: 32px;
-  margin: 16px 0px;
+  border: 1px solid rgba(161, 161, 161, 0.75);
+  border-radius: 4px;
+  margin: 8px 0px;
 }
 
 form #redirect-button {
@@ -264,9 +266,9 @@ form #redirect-button {
 
 #redirect-button #login,
 #register {
-  width: 20%;
-  height: 32px;
-  background-color: rgb(134, 143, 155);
+  width: 32%;
+  height: 40px;
+  background-color: rgb(255, 69, 0);
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -279,9 +281,8 @@ form #redirect-button {
 
 #redirect-button #login:hover,
 #register:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
-  background-color: rgb(245, 245, 245);
-  color: rgb(134, 143, 155);
+  background-color: rgb(252, 103, 50);
+  color: rgb(245, 245, 245);
 }
 
 .d-none {
