@@ -54,6 +54,17 @@
   }
 }
 
+/* Pop-up Form */
+@media screen and (min-width: 720px) {
+  #form {
+    width: 500px;
+  }
+
+  form .form-group .form-control {
+    width: 70%;
+  }
+}
+
 /*Cover*/
 @media screen and (min-width: 540px) {
   .cover-title h1 {

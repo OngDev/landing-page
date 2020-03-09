@@ -32,23 +32,50 @@
         <a onclick="togglePopup()">Log in</a>
       </div>
     </div>
-    <div id="popup" class="d-none" onclick="togglePopup()"></div>
+    <div id="pop-up" class="popup d-none" onclick="togglePopup()"></div>
     <div id="form" class="d-none">
-      <div class="type-form">
-        <div id="close-form" onclick="togglePopup()"><i class="fas fa-times"></i></div>
-        <div class="form-name">Login</div>
-        <input type="text" placeholder="This is just example" />
-        <input type="password" placeholder="In task Login and Register form make more" />
+      <form id="log-in-form">
+        <p class="form-title">Log in</p>
+        <div class="form-group">
+          <input id="login-email" type="text" class="form-control" required />
+          <label>Email</label>
+        </div>
+        <div class="form-group">
+          <input id="login-password" type="password" class="form-control" required />
+          <label>Password</label>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="log-in-btn" class="submit-btn">Log in</button>
+        </div>
+        <h6 class="bottom-text">Don't have an account? <button onclick="changeForm()" class="change-form-btn">Register</button></h6>
+      </form>
+      <form id="register-form">
+        <p class="form-title">Register</p>
+        <div class="form-group">
+          <input id="reg-name" type="text" class="form-control" required />
+          <label>Full name</label>
+        </div>
+        <div class="form-group">
+          <input id="reg-email" type="text" class="form-control" required />
+          <label>Email</label>
+        </div>
+        <div class="form-group">
+          <input id="reg-password" type="password" class="form-control" required />
+          <label>Password</label>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="reg-btn" class="submit-btn">Register</button>
+        </div>
+        <h6 class="bottom-text">Already have an account? <button onclick="changeForm()" class="change-form-btn">Log in</button></h6>
+      </form>
+      <div id="succeed-pop-up" class="popup d-none">
+        <div class="pop-up-content">
+          <p class="bottom-text">Action succeed</p>
+          <button id="OK-btn">OK</button>
+        </div>
       </div>
-      <div class="type-form">
-        <div id="close-form" onclick="togglePopup()"><i class="fas fa-times"></i></div>
-        <div class="form-name">Register</div>
-        <input type="text" placeholder="This is just example" />
-        <input type="password" placeholder="In task Login and Register form make more" />
-      </div>
-      <div id="redirect-button">
-        <div id="login">Login</div>
-        <div id="register">Register</div>
+      <div id="close-form" onclick="togglePopup()">
+        <i class="fas fa-times"></i>
       </div>
     </div>
     <div id="cover">
@@ -157,4 +184,6 @@
   <script src="resources/js/contributor.js"></script>
   <script src="resources/js/github.js"></script>
   <script src="resources/js/cover.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="resources/js/register.js"></script>
 </html>
