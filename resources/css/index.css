@@ -87,8 +87,8 @@
 /* Form */
 #form {
   background-color: rgb(255, 255, 255);
-  width: 500px;
-  height: 450px;
+  width: 80%;
+  height: auto;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -99,6 +99,16 @@
   font-size: 25px;
   border-radius: 3px;
   box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, 0.7);
+}
+
+#close-form {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+}
+
+.fa-times {
+  font-size: 0.8em;
 }
 
 #succeed-pop-up {
@@ -131,9 +141,8 @@ form .form-group {
 }
 
 form .form-group .form-control {
-  width: 100%;
   height: 45px;
-  width: 70%;
+  width: 100%;
   border: 1px solid rgb(115, 115, 115);
   background-color: rgb(245, 245, 245);
   border-radius: 3px; 
