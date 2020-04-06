@@ -19,7 +19,6 @@ function register() {
 function popupResponse(response) {
     var btn = document.getElementById('log-in');
     btn.style.display = 'none';
-  
     var tmp = document.createElement('DIV');
     tmp.appendChild(document.createTextNode('Hello'));
     tmp.id = 'wc-user';
