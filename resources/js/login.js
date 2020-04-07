@@ -2,14 +2,14 @@ const loginSubmit = document.getElementById('log-in-btn');
 
 function login() {
     var userForm = {
-        userName = document.getElementById('login-email').value,
-        password =document.getElementById('login-password').value
-    }
-    axios.get ('http://45.77.253.146:3000/api/auth/login', UserForm)
+        userName: document.getElementById('login-email').value,
+        password: document.getElementById('login-password').value
+    };
+    axios.get ('http://45.77.253.146:3000/api/auth/login', userForm)
     .then (respond => {
         processLogin(respond);
     })
-    .catch( error => {
+    .catch(error => {
         console.log(error);
     });
 }
