@@ -1,33 +1,35 @@
 const regSubmit = document.getElementById('reg-btn');
+let username;
 
 function register() {
-    var userData = {
-        fullname: document.getElementById('reg-name').value,
+    const userData = {
+        fullName: document.getElementById('reg-name').value,
         email: document.getElementById('reg-email').value,
         password: document.getElementById('reg-password').value
     };
-
-    axios.post('http://45.77.253.146:3000/api/auth/register', userData)
+    axios.post(registerURL, userData)
     .then(response => {
-        popupResponse(response);
+        popupResponse();
     })
     .catch(error => {
         console.log(error);
     });
+    
+    username = userData.fullName;
 }
 
-function popupResponse(response) {
-    var btn = document.getElementById('log-in');
+function popupResponse() {
+    const form = document.getElementById('form-container');
+    form.style.display = 'none';
+    const btn = document.getElementById('log-in');
     btn.style.display = 'none';
-  
-    var tmp = document.createElement('DIV');
-    tmp.appendChild(document.createTextNode('Hello'));
-    tmp.id = 'wc-user';
-    var header = document.getElementById('header');
-    header.appendChild(tmp);
     
-    var popup = document.getElementById('sucess-pop-up');
-    popup.style.display = 'block';
+    const welcome = document.createElement('div');
+    welcome.id = 'welcome-text';
+    const popup = document.getElementById('success-popup');
+    popup.appendChild(welcome);
+    welcome.appendChild(document.createTextNode('Welcome ' + username));
+    popup.classList.toggle('d-none');
 }
 
 regSubmit.addEventListener('click', register);

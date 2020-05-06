@@ -23,11 +23,11 @@
   #header-items-container {
     margin: 0px auto;
     width: 60%;
-    text-align: center;
+    text-align: end;
   }
 
   #header-items-container a {
-    margin: 0px 10px;
+    margin: -15px 20px;
     display: inline-block;
     transition: 0.2s;
   }
@@ -37,8 +37,8 @@
   }
 
   #log-in {
-    width: 20%;
     text-align: right;
+    cursor: pointer;
   }
 
   #log-in a {
@@ -56,12 +56,17 @@
 
 /* Pop-up Form */
 @media screen and (min-width: 720px) {
-  #form {
+  #form-container {
     width: 500px;
   }
 
-  form .form-group .form-control {
+  #form-container .form-group .form-control {
     width: 70%;
+  }
+
+  #success-popup {
+    width: 350px;
+    height: 200px;
   }
 }
 

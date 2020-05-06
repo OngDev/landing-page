@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="https://kit.fontawesome.com/e40be82818.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="resources/css/index.css" />
     <link rel="stylesheet" href="resources/css/responsive.css" />
     <link rel="stylesheet" href="resources/css/animation.css" />
@@ -29,12 +30,11 @@
         <a href="#">Portfolio</a>
       </div>
       <div id="log-in" class="items">
-        <a onclick="togglePopup()">Log in</a>
+        <a onclick="togglePopup('form-container')">Log in</a>
       </div>
     </div>
-    <div id="pop-up" class="popup d-none" onclick="togglePopup()"></div>
-    <div id="form" class="d-none">
-      <form id="log-in-form">
+    <div id="form-container" class="popup d-none">
+      <div id="log-in-form">
         <p class="form-title">Log in</p>
         <div class="form-group">
           <input id="login-email" type="text" class="form-control" required />
@@ -47,9 +47,9 @@
         <div class="form-group">
           <button type="submit" id="log-in-btn" class="submit-btn">Log in</button>
         </div>
-        <h6 class="bottom-text">Don't have an account? <button onclick="changeForm()" class="change-form-btn">Register</button></h6>
-      </form>
-      <form id="register-form">
+        <p class="bottom-text">Don't have an account? <button onclick="changeForm()" class="change-form-btn">Register</button></p>
+      </div>
+      <div id="register-form" class="d-none">
         <p class="form-title">Register</p>
         <div class="form-group">
           <input id="reg-name" type="text" class="form-control" required />
@@ -66,16 +66,17 @@
         <div class="form-group">
           <button type="submit" id="reg-btn" class="submit-btn">Register</button>
         </div>
-        <h6 class="bottom-text">Already have an account? <button onclick="changeForm()" class="change-form-btn">Log in</button></h6>
-      </form>
-      <div id="succeed-pop-up" class="popup d-none">
-        <div class="pop-up-content">
-          <p class="bottom-text">Action succeed</p>
-          <button id="OK-btn">OK</button>
-        </div>
+        <p class="bottom-text">Already have an account? <button onclick="changeForm()" class="change-form-btn">Log in</button></p>
       </div>
-      <div id="close-form" onclick="togglePopup()">
-        <i class="fas fa-times"></i>
+      <div class="close-form" onclick="togglePopup('form-container')">
+        <i class="fas fa-times sm-icon-size"></i>
+      </div>
+    </div>
+    <div id="success-popup" class="popup d-none">
+      <i class="fas fa-check-circle lg-icon-size success-check"></i>
+      <p class="msg-text">Register Sucessfully</p>
+      <div class="close-form" onclick="togglePopup('success-popup')">
+        <i class="fas fa-times sm-icon-size"></i>
       </div>
     </div>
     <div id="cover">
@@ -184,6 +185,6 @@
   <script src="resources/js/contributor.js"></script>
   <script src="resources/js/github.js"></script>
   <script src="resources/js/cover.js"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="resources/js/register.js"></script>
+  <script src="resources/js/domain.js"></script>
 </html>

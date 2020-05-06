@@ -1,23 +1,14 @@
-var body = document.getElementsByTagName('BODY')[0];
-var popup = document.getElementById('pop-up');
-var form = document.getElementById('form');
-var Login = document.getElementById('log-in-form');
-var Register = document.getElementById('register-form');
+const form = document.getElementById('form-container');
+const loginForm = document.getElementById('log-in-form');
+const registerForm = document.getElementById('register-form');
+const successPopup = document.getElementById('success-popup');
 
-togglePopup = () => {
-  popup.classList.toggle('d-flex');
-  form.classList.toggle('d-flex');
-  Login.style.display = 'block';
-  Register.style.display = 'none';
-};
+function togglePopup(popupId) {
+  const popup = document.getElementById(popupId);
+  popup.classList.toggle('d-none');
+}
 
-changeForm = () => {
-  if (Login.style.display === 'block') {
-    Login.style.display = 'none';
-    Register.style.display = 'block';
-  }
-  else {
-    Login.style.display = 'block';
-    Register.style.display = 'none';
-  }
+function changeForm() {
+  loginForm.classList.toggle('d-none');
+  registerForm.classList.toggle('d-none');
 }
