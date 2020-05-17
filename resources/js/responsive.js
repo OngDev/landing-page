@@ -1,13 +1,15 @@
 /* Header */
-var header = document.getElementById('header');
+const body = document.body;
+const header = document.getElementById('header');
 
 headerTogger = () => {
   header.classList.toggle('responsive');
-};
+  body.classList.toggle('disable-scrolling');
+}
 
 window.onscroll = () => {
   this.stickyHeader();
-};
+}
 
 stickyHeader = () => {
   if (window.pageYOffset > 0) {
@@ -15,4 +17,4 @@ stickyHeader = () => {
   } else {
     header.classList.remove('non-transparent-bg');
   }
-};
+}

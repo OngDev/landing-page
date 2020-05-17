@@ -5,6 +5,11 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.disable-scrolling {
+  height: 100%;
+  overflow-y: hidden;
+}
+
 /* Header */
 #header {
   width: 100%;
@@ -50,10 +55,9 @@
 
 #log-in a {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
   line-height: 3;
   padding: 10px 35px 10px 0px;
-  background-color: #ffffff;
 }
 
 #header.responsive {
@@ -241,14 +245,14 @@ p.bottom-text {
   display: none;
 }
 
-.close-form {
+.close-form-btn {
   position: absolute;
   top: 10px;
   right: 15px;
   color: rgba(0, 0, 0, 0.5);
 }
 
-.close-form:hover {
+.close-form-btn:hover {
   color: rgb(240, 148, 28);
 }
 

@@ -9,7 +9,7 @@ function register() {
     };
     axios.post(registerURL, userData)
     .then(response => {
-        popupResponse();
+        showSuccessMessage();
     })
     .catch(error => {
         console.log(error);
@@ -18,7 +18,7 @@ function register() {
     username = userData.fullName;
 }
 
-function popupResponse() {
+function showSuccessMessage() {
     const form = document.getElementById('form-container');
     form.style.display = 'none';
     const btn = document.getElementById('log-in');

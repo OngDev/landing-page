@@ -1,11 +1,10 @@
-const form = document.getElementById('form-container');
 const loginForm = document.getElementById('log-in-form');
 const registerForm = document.getElementById('register-form');
-const successPopup = document.getElementById('success-popup');
 
 function togglePopup(popupId) {
   const popup = document.getElementById(popupId);
   popup.classList.toggle('d-none');
+  body.classList.toggle('disable-scrolling');
 }
 
 function changeForm() {
