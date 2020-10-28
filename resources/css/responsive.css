@@ -20,13 +20,13 @@
     display: block;
   }
 
-  #header-items-container {
+  #header-items-container{
     margin: 0px auto;
     width: 60%;
     text-align: end;
   }
 
-  #header-items-container a {
+  #header-items-container a{
     margin: -15px 20px;
     display: inline-block;
     transition: 0.2s;
@@ -36,19 +36,19 @@
     color: #ff4500;
   }
 
-  #log-in {
+  #log-in, #log-out {
     text-align: right;
     cursor: pointer;
   }
 
-  #log-in a {
+  /*#log-in, #log-out*/#header button {
     padding: 10px;
     color: #ffffff;
     background-color: #ff4500;
     transition: 0.2s;
   }
 
-  #log-in a:hover {
+  /*#log-in :hover, #log-out :hover*/ #header button :hover{
     color: #000000;
     background-color: #ffffff;
   }

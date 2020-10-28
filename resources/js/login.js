@@ -1,38 +1,27 @@
-// const loginSubmit = document.getElementById('log-in-btn');
+var logOutBtn = document.getElementById('log-out');
+var logInBtn = document.getElementById('log-in');
 
-// function login() {
-//     const userForm = {
-//         email: document.getElementById('login-email').value,
-//         password: document.getElementById('login-password').value
-//     };
-//     axios.post(loginURL, userForm)
-//     .then (response => {
-//         processLogin();
-//     })
-//     .catch(error => {
-//         console.log(error);
-//     });
-// }
+window.addEventListener('DOMContentLoaded', (event) =>{
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    var token = urlParams.get("token");
+    var isFirstLogin = urlParams.get("isFirstLogin");
 
-// function processLogin() {0
-//     const button = document.getElementById('log-in');
-//     const lock = document.getElementsByClassName('disable-scrolling');
-//     const loginForm = document.getElementById('form-container');
-//     button.style.display = 'none'; 
-//     loginForm.style.display = 'none';
-//     body.classList.toggle('disable-scrolling'); //enable scrolling
-// }
-
-// loginSubmit.addEventListener('click', login);
-window.onload = function() {
-    if ( !document.cookie ) {
-        var uri = document.URL;
-        var pos = uri.search("token");
-        if (pos > 0) {
-            var endTokenPos = uri.search("&isFirstLogin")
-            var token = uri.substring(pos+6, endTokenPos);
-            console.log(token);
-        }
+    if(token) {
+        document.cookie = "userToken=" + token;
     }
     
+    if(!document.cookie) {
+        logOutBtn.style.display = 'none';
+    } else{
+        logInBtn.style.display = 'none';
+    }
+    
+});
+
+function logOut() {
+    document.cookie = `userToken=; expires=${new Date().toUTCString()}; path=/;`;
+    location.href = location.origin;
 }
+
+logOutBtn.addEventListener("click", logOut);

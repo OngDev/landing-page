@@ -23,6 +23,17 @@
   align-items: center;
 }
 
+#header button {
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#header button :focus {
+  border: none !important;
+  outline: none !important;
+}
+
 #brand-name {
   margin: 0 auto;
   font-size: 1.7em;
@@ -53,7 +64,7 @@
   line-height: 3;
 }
 
-#log-in a {
+#log-in, #log-out {
   text-decoration: none;
   color: #ffffff;
   line-height: 3;
@@ -63,6 +74,11 @@
 #header.responsive {
   height: 100%;
   background: #141414;
+}
+
+#header.responsive button{
+  background-color: #141414;
+  text-align: left;
 }
 
 #header.non-transparent-bg {
