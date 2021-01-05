@@ -33,8 +33,4 @@ export default {
 * {
   font-family: 'Poppins', sans-serif;
 }
-.home {
-  padding-right: 5.125em;
-  padding-left: 5.125em;
-}
 </style>

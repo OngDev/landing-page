@@ -46,6 +46,9 @@ export default {
 	height: 100vh;
   display: flex;
   align-items: center;
+
+  padding-right: 5.125em;
+  padding-left: 5.125em;
 }
 .text {
   margin-left: 5.755em;

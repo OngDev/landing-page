@@ -21,8 +21,7 @@
       </div>
     </div>
     <div class="image">
-      <el-image
-      :src="url"></el-image>
+      <img src="../assets/features.svg">
     </div>
 	</div>
 </template>
@@ -30,11 +29,6 @@
 <script>
 export default {
   name: "Features",
-  data: () => {
-    return {
-      url: "https://images.pexels.com/photos/1666779/pexels-photo-1666779.jpeg"
-    };
-  },
 };
 </script>
 
@@ -47,6 +41,8 @@ export default {
   display: flex;
   align-items: center;
   background-color: #FBF7F5;
+  padding-right: 5.125em;
+  padding-left: 5.125em;
 }
 .text {
   margin-right: 5.755em;

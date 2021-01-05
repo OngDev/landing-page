@@ -20,7 +20,9 @@ export default {
 	font-family: 'Poppins', sans-serif;
 }
 .intro-video {
-	height: 85vh;
+	height: 88vh;
 	background-color: salmon;
+  padding-right: 5.125em;
+  padding-left: 5.125em;
 }
 </style>

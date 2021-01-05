@@ -22,5 +22,7 @@ export default {
 .intro-video {
 	height: 100vh;
 	background-color: tomato;
+  padding-right: 5.125em;
+  padding-left: 5.125em;
 }
 </style>

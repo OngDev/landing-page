@@ -2,6 +2,7 @@
   <div class="header">
 		<div class="ongdev-logo">
 			<!-- Insert Ongdev Logo -->
+			<img src="../assets/ODlogo.svg" alt="">
 		</div>
 		<div class="utility">
 			<div class="search item">
@@ -33,8 +34,13 @@ export default {
 	font-family: 'Poppins', sans-serif;
 }
 .header {
-	display: inline-block;
+	display: flex;
 	min-width: -webkit-fill-available;
+  padding-right: 5.125em;
+  padding-left: 5.125em;
+	height: 8.255em;
+	align-items: center;
+	justify-content: space-between;
 }
 .utility {
 	float: right;
