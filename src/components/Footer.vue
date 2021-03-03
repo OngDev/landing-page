@@ -12,17 +12,14 @@
       <el-col :span="5">
         <div class="icon grid-content">
           <a :href="'https://www.facebook.com/ongdevvuitinh'"
-             :target="'blank'"
           >
             <img src="../assets/facebook-f-brands.svg" class="icon-item">
           </a>
           <a :href="'https://www.youtube.com/channel/UCA2tFk2NdzOzKpSJdf24cAg'"
-             :target="'blank'"
           >
             <img src="../assets/youtube-brands.svg" class="icon-item">
           </a>
           <a :href="'https://github.com/OngDevTech'"
-             :target="'blank'"
           >
             <img src="../assets/github-brands.svg" class="icon-item">
           </a>
@@ -72,7 +69,8 @@ export default {
 .icon-item {
   height: 1.415em;
   width: auto;
-  padding-left: 2em;
+  padding: 5px 5px;
+  margin: 0 7px;
   color: #FFB347;
 }
 .copyright {

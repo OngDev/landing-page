@@ -1,31 +1,36 @@
 <template>
   <div class="header">
-		<div class="ongdev-logo">
-			<!-- Insert Ongdev Logo -->
-			<img src="../assets/ODlogo.svg" alt="">
-		</div>
-		<div class="utility">
-			<!-- <div class="search item">
-				<i class="el-icon-search"></i>
-			</div> -->
-			<el-menu :default-active="activeIndex" 
-				class="el-menu-demo" 
-				mode="horizontal" 
-				menu-trigger="click">
-				<el-submenu index="1">
-					<template #title><img src="../assets/menu-button.svg"></template>
-					<el-menu-item index="1-1"><template #title>HOME</template></el-menu-item>
-					<el-menu-item index="1-2"><template #title>ABOUT</template></el-menu-item>
-					<el-menu-item index="1-3"><template #title>REQUEST PAGE</template></el-menu-item>
-					<el-menu-item index="1-4"><template #title>BLOG</template></el-menu-item>
-					<el-menu-item index="1-5"><template #title>YOUTUBE VIDEO</template></el-menu-item>
-					<el-menu-item index="1-6"><template #title>TEAM</template></el-menu-item>
-				</el-submenu>
-			</el-menu>
-			<el-button class="auth item">
-				register
-			</el-button>
-		</div>
+    <div class="ongdev-logo">
+      <!-- Insert Ongdev Logo -->
+      <a href="/">
+        <img src="../assets/ODlogo.svg" alt="Logo" />
+      </a>
+    </div>
+    <div class="utility">
+      <el-menu
+        :default-active="activeIndex"
+        class="el-menu-demo"
+        mode="horizontal"
+        active-text-color="#ffb347"
+      >
+        <el-menu-item index="1"><a href="/">HOME</a></el-menu-item>
+        <el-menu-item index="2"
+          ><a href="javascript:void(0);">ABOUT</a></el-menu-item
+        >
+        <el-menu-item index="3"
+          ><a href="javascript:void(0);">REQUEST PAGE</a></el-menu-item
+        >
+        <el-menu-item index="4"
+          ><a href="javascript:void(0);">BLOG</a></el-menu-item
+        >
+        <el-menu-item index="5"
+          ><a href="javascript:void(0);">YOUTUBE VIDEO</a></el-menu-item
+        >
+        <el-menu-item index="6"
+          ><a href="javascript:void(0);">TEAM</a></el-menu-item
+        >
+      </el-menu>
+    </div>
   </div>
 </template>
 
@@ -40,57 +45,48 @@ export default {
   },
 };
 </script>
-
+<style>
+.el-menu--horizontal > .el-submenu.is-active .el-submenu__title,
+.el-menu.el-menu--horizontal {
+  border-bottom: none;
+}
+.el-icon-arrow-down:before {
+  content: "";
+}
+</style>
 <style scoped>
 * {
-	font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .header {
-	display: flex;
-	min-width: -webkit-fill-available;
-    padding-right: 5.125em;
-	padding-left: 5.125em;
-	height: 8.255em;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  min-width: -webkit-fill-available;
+  padding-right: 5.125em;
+  padding-left: 5.125em;
+  height: 8.255em;
+  align-items: center;
+  justify-content: space-between;
 }
 .utility {
-	display: flex;
+  display: flex;
 }
 .menu {
-	/* margin-left: 3.25em;
-	margin-top: 2.25em;
-	margin-bottom: 2em; */
-	display: inline-block;
+  display: inline-block;
 }
 .el-button {
-	background-color: #ffb347;
-	color: #ffffff;
-	border: none;
-	padding: 8px 16px;
-	letter-spacing: 1.35px;
-	border-radius: 0px;
-	transition: 0.2s ease-in-out;
+  background-color: #ffb347;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  letter-spacing: 1.35px;
+  border-radius: 0px;
+  transition: 0.2s ease-in-out;
 }
 .el-button:hover {
-	background-color: #FFC574;
+  background-color: #ffc574;
 }
 
-/* .el-menu--horizontal>.el-submenu.is-active .el-submenu__title {
-	border-bottom: none;
+.el-menu-item a {
+  text-decoration: none;
 }
-
-.el-submenu__title i {
-	display: none !important;
-} */
-
-.el-menu--horizontal .el-menu .el-menu-item.is-active,
-.el-menu--horizontal .el-menu .el-submenu.is-active>.el-submenu__title {
-	color: #ffb347;
-}
-
-.el-menu.el-menu--horizontal {
-	border: none;
-}
-
 </style>
