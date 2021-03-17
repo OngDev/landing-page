@@ -12,7 +12,7 @@
 <script>
 import Header from "../components/Header";
 import IntroVideo from "../components/IntroVideo";
-import AboutOngDev from "../components/AboutOndDev";
+import AboutOngDev from "../components/AboutOngDev";
 import Features from "../components/Features"
 import Team from "../components/Team"
 import Footer from "../components/Footer"

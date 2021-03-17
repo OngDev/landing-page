@@ -11,9 +11,18 @@
       </el-col>
       <el-col :span="5">
         <div class="icon grid-content">
-          <img src="../assets/facebook-f-brands.svg" class="icon-item">
-          <img src="../assets/youtube-brands.svg" class="icon-item">
-          <img src="../assets/github-brands.svg" class="icon-item">
+          <a :href="'https://www.facebook.com/ongdevvuitinh'"
+          >
+            <img src="../assets/facebook-f-brands.svg" class="icon-item">
+          </a>
+          <a :href="'https://www.youtube.com/channel/UCA2tFk2NdzOzKpSJdf24cAg'"
+          >
+            <img src="../assets/youtube-brands.svg" class="icon-item">
+          </a>
+          <a :href="'https://github.com/OngDevTech'"
+          >
+            <img src="../assets/github-brands.svg" class="icon-item">
+          </a>
         </div>
       </el-col>
 		</el-row>
@@ -60,7 +69,9 @@ export default {
 .icon-item {
   height: 1.415em;
   width: auto;
-  padding-left: 2em;
+  padding: 5px 5px;
+  margin: 0 7px;
+  color: #FFB347;
 }
 .copyright {
   text-align: center;
