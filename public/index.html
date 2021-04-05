@@ -1,21 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body style="margin: 0;">
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+    <title>Hế lô hế lô, Ông Dev đêi!</title>
+    <style>
+        @font-face {
+    font-family: AvenirNext;
+    src: url("fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+}
+        html, body, main {
+    margin: 0;
+    height: 100%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFF1DC;
+    font-family: 'AvenirNext';
+    background-color: #2c2c2c;
+}
+main > .intro {
+	font-size: 3.75em;
+	font-weight: 600;
+}
+main .ongdev-text{
+	color: #FFB347;
+}
+main > .tagline {
+    font-size: 1.75em;
+}
+main> #social-text {
+    font-size: 0.75em;
+}
+main>div {
+    margin: 0.3em 0;
+}
+    </style>
+</head>
+<body>
+    <main>
+		<div class="intro">Hế lô hế lô, <span class="ongdev-text">Ông Dev đêi!</span></div>
+        <div class="tagline">Ghét code | Nghiện bia | Đừng như <span class="ongdev-text">Ông Dev</span></div>
+        <div id="social-text">---Link social ở dưới nhá---</div>
+		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
+		<div class="icons-social">
+			<a target="_blank" href="https://github.com/milonguyen95"><i class="fab fa-github"></i></a>
+			<a target="_blank" href="https://www.linkedin.com/in/milonguyen95"><i class="fab fa-linkedin"></i></a>
+    </div>
+	</main>
+</body>
 </html>
